@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard';
 import { TrendingUp, Star } from 'lucide-react';
 
 const Index = () => {
-  // Sample trending products data
+  // Sample trending products data with diverse categories
   const trendingProducts = [
     {
       id: '1',
@@ -17,46 +17,47 @@ const Index = () => {
     },
     {
       id: '2',
-      title: 'React Native Fitness App',
-      category: 'Mobile App',
+      title: 'Complete UI Kit for SaaS Apps',
+      category: 'UI Kit',
       price: 89,
-      thumbnail: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=240&fit=crop',
-      author: 'AppCraft Studio'
+      thumbnail: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=240&fit=crop',
+      author: 'DesignCraft Studio'
     },
     {
       id: '3',
-      title: '2D Platformer Game Kit',
-      category: 'Game',
+      title: 'Social Media Graphics Bundle',
+      category: 'Graphics',
       price: 35,
-      thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=240&fit=crop',
-      author: 'GameDev Masters'
+      thumbnail: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=240&fit=crop',
+      author: 'Creative Masters'
     },
     {
       id: '4',
-      title: 'Complete Web Development Course',
-      category: 'Course',
-      price: 199,
-      thumbnail: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=240&fit=crop',
+      title: 'Digital Marketing Automation Scripts',
+      category: 'Marketing Tool',
+      price: 75,
+      thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=240&fit=crop',
       author: 'CodeAcademy Plus'
     },
     {
       id: '5',
-      title: 'Cryptocurrency Portfolio Tracker',
-      category: 'Website',
-      price: 75,
-      thumbnail: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=240&fit=crop',
-      author: 'CryptoUI'
+      title: 'Complete Guide to Web Development',
+      category: 'eBook',
+      price: 29,
+      thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=240&fit=crop',
+      author: 'TechBooks Publishing'
     },
     {
       id: '6',
-      title: 'Social Media Management App',
-      category: 'Mobile App',
-      price: 120,
-      thumbnail: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=240&fit=crop',
-      author: 'Social Solutions'
+      title: 'Royalty-Free Music Pack',
+      category: 'Audio',
+      price: 45,
+      thumbnail: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=240&fit=crop',
+      author: 'Audio Solutions'
     }
   ];
 
+  // Sample featured stats
   const featuredStats = [
     { label: 'Digital Products', value: '10,000+' },
     { label: 'Happy Customers', value: '25,000+' },

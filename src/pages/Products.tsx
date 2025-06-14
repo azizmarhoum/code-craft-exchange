@@ -16,6 +16,13 @@ const Products = () => {
     { value: 'mobile-apps', label: 'Mobile Apps' },
     { value: 'games', label: 'Games' },
     { value: 'courses', label: 'Online Courses' },
+    { value: 'ui-kits', label: 'UI Kits' },
+    { value: 'graphics', label: 'Graphics & Templates' },
+    { value: 'ebooks', label: 'eBooks' },
+    { value: 'marketing-tools', label: 'Marketing Tools' },
+    { value: 'scripts', label: 'Scripts & Snippets' },
+    { value: 'audio', label: 'Audio Files' },
+    { value: 'video', label: 'Video Assets' },
   ];
 
   const sortOptions = [
@@ -25,7 +32,7 @@ const Products = () => {
     { value: 'price-high', label: 'Price: High to Low' },
   ];
 
-  // Extended sample products
+  // Extended sample products with diverse categories
   const allProducts = [
     {
       id: '1',
@@ -37,11 +44,11 @@ const Products = () => {
     },
     {
       id: '2',
-      title: 'React Native Fitness App',
-      category: 'Mobile App',
+      title: 'Complete SaaS UI Kit',
+      category: 'UI Kit',
       price: 89,
-      thumbnail: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=240&fit=crop',
-      author: 'AppCraft Studio'
+      thumbnail: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=240&fit=crop',
+      author: 'DesignCraft Studio'
     },
     {
       id: '3',
@@ -61,43 +68,67 @@ const Products = () => {
     },
     {
       id: '5',
-      title: 'Cryptocurrency Portfolio Tracker',
-      category: 'Website',
-      price: 75,
-      thumbnail: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=240&fit=crop',
-      author: 'CryptoUI'
+      title: 'Social Media Graphics Bundle',
+      category: 'Graphics',
+      price: 25,
+      thumbnail: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=240&fit=crop',
+      author: 'Creative Masters'
     },
     {
       id: '6',
-      title: 'Social Media Management App',
-      category: 'Mobile App',
-      price: 120,
+      title: 'Instagram Story Templates',
+      category: 'Graphics',
+      price: 19,
       thumbnail: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=240&fit=crop',
       author: 'Social Solutions'
     },
     {
       id: '7',
-      title: 'Restaurant Website Template',
-      category: 'Website',
-      price: 65,
+      title: 'The Complete Digital Marketing Guide',
+      category: 'eBook',
+      price: 29,
       thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=240&fit=crop',
-      author: 'DesignCraft'
+      author: 'Marketing Guru'
     },
     {
       id: '8',
-      title: 'Unity 3D Racing Game',
-      category: 'Game',
-      price: 150,
+      title: 'Email Marketing Automation Tools',
+      category: 'Marketing Tool',
+      price: 75,
       thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=240&fit=crop',
-      author: 'Unity Masters'
+      author: 'AutoMarketing Pro'
     },
     {
       id: '9',
-      title: 'Digital Marketing Masterclass',
-      category: 'Course',
-      price: 129,
-      thumbnail: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=240&fit=crop',
-      author: 'Marketing Guru'
+      title: 'React Component Library',
+      category: 'Script',
+      price: 65,
+      thumbnail: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=240&fit=crop',
+      author: 'CodeLibrary'
+    },
+    {
+      id: '10',
+      title: 'Royalty-Free Music Pack',
+      category: 'Audio',
+      price: 45,
+      thumbnail: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=240&fit=crop',
+      author: 'Audio Solutions'
+    },
+    {
+      id: '11',
+      title: 'Motion Graphics Templates',
+      category: 'Video',
+      price: 89,
+      thumbnail: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=240&fit=crop',
+      author: 'Video Pro'
+    },
+    {
+      id: '12',
+      title: 'Dashboard UI Kit for Analytics',
+      category: 'UI Kit',
+      price: 120,
+      thumbnail: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=240&fit=crop',
+      author: 'Analytics Design'
     }
   ];
 

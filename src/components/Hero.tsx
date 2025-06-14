@@ -9,6 +9,10 @@ const Hero = () => {
     { name: 'Mobile Apps', icon: '📱', count: '1.8k+' },
     { name: 'Games', icon: '🎮', count: '950+' },
     { name: 'Online Courses', icon: '📚', count: '1.2k+' },
+    { name: 'UI Kits', icon: '🎨', count: '800+' },
+    { name: 'Graphics', icon: '🖼️', count: '3.2k+' },
+    { name: 'eBooks', icon: '📖', count: '650+' },
+    { name: 'Audio Files', icon: '🎵', count: '1.1k+' },
   ];
 
   return (
@@ -23,7 +27,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Discover premium websites, apps, games, and online courses from talented creators worldwide
+            Discover premium digital assets, tools, and resources from talented creators worldwide
           </p>
 
           {/* Search Bar */}
