@@ -1,16 +1,12 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Star, Eye } from 'lucide-react';
 
 interface ProductCardProps {
   id: string;
   title: string;
   category: string;
   price: number;
-  rating: number;
-  reviewCount: number;
-  viewCount: number;
   thumbnail: string;
   author: string;
 }
@@ -20,9 +16,6 @@ const ProductCard = ({
   title, 
   category, 
   price, 
-  rating, 
-  reviewCount, 
-  viewCount, 
   thumbnail, 
   author 
 }: ProductCardProps) => {
@@ -41,10 +34,6 @@ const ProductCard = ({
               {category}
             </span>
           </div>
-          <div className="absolute top-3 right-3 bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded-full flex items-center space-x-1">
-            <Eye className="h-3 w-3" />
-            <span>{viewCount.toLocaleString()}</span>
-          </div>
         </div>
 
         {/* Content */}
@@ -52,26 +41,7 @@ const ProductCard = ({
           <h3 className="font-semibold text-gray-900 text-sm mb-1 line-clamp-2 group-hover:text-blue-600 transition-colors">
             {title}
           </h3>
-          <p className="text-xs text-gray-500 mb-2">by {author}</p>
-          
-          {/* Rating */}
-          <div className="flex items-center space-x-1 mb-3">
-            <div className="flex items-center">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className={`h-3 w-3 ${
-                    i < Math.floor(rating)
-                      ? 'text-yellow-400 fill-current'
-                      : 'text-gray-300'
-                  }`}
-                />
-              ))}
-            </div>
-            <span className="text-xs text-gray-500">
-              {rating.toFixed(1)} ({reviewCount})
-            </span>
-          </div>
+          <p className="text-xs text-gray-500 mb-3">by {author}</p>
 
           {/* Price */}
           <div className="flex items-center justify-between">

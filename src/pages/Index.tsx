@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
@@ -13,9 +12,6 @@ const Index = () => {
       title: 'Modern E-commerce Website Template',
       category: 'Website',
       price: 49,
-      rating: 4.8,
-      reviewCount: 124,
-      viewCount: 2340,
       thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=240&fit=crop',
       author: 'WebStudio Pro'
     },
@@ -24,9 +20,6 @@ const Index = () => {
       title: 'React Native Fitness App',
       category: 'Mobile App',
       price: 89,
-      rating: 4.9,
-      reviewCount: 89,
-      viewCount: 1850,
       thumbnail: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=240&fit=crop',
       author: 'AppCraft Studio'
     },
@@ -35,9 +28,6 @@ const Index = () => {
       title: '2D Platformer Game Kit',
       category: 'Game',
       price: 35,
-      rating: 4.7,
-      reviewCount: 156,
-      viewCount: 3200,
       thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=240&fit=crop',
       author: 'GameDev Masters'
     },
@@ -46,9 +36,6 @@ const Index = () => {
       title: 'Complete Web Development Course',
       category: 'Course',
       price: 199,
-      rating: 4.9,
-      reviewCount: 2340,
-      viewCount: 8750,
       thumbnail: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=240&fit=crop',
       author: 'CodeAcademy Plus'
     },
@@ -57,9 +44,6 @@ const Index = () => {
       title: 'Cryptocurrency Portfolio Tracker',
       category: 'Website',
       price: 75,
-      rating: 4.6,
-      reviewCount: 67,
-      viewCount: 1420,
       thumbnail: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=240&fit=crop',
       author: 'CryptoUI'
     },
@@ -68,9 +52,6 @@ const Index = () => {
       title: 'Social Media Management App',
       category: 'Mobile App',
       price: 120,
-      rating: 4.8,
-      reviewCount: 203,
-      viewCount: 2890,
       thumbnail: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=240&fit=crop',
       author: 'Social Solutions'
     }

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../components/Layout';
-import { Star, Eye, Heart, ShoppingCart, Download, User } from 'lucide-react';
+import { Eye, Heart, ShoppingCart, Download, User } from 'lucide-react';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -15,9 +15,6 @@ const ProductDetail = () => {
     category: 'Website',
     price: 49,
     originalPrice: 79,
-    rating: 4.8,
-    reviewCount: 124,
-    viewCount: 2340,
     author: 'WebStudio Pro',
     authorAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face',
     description: 'A beautiful, fully responsive e-commerce website template built with modern technologies. Perfect for any online store, this template includes all the essential pages and features you need to start selling online immediately.',
@@ -41,23 +38,6 @@ const ProductDetail = () => {
     fileSize: '25 MB',
     lastUpdated: '2024-01-15'
   };
-
-  const reviews = [
-    {
-      id: 1,
-      author: 'Sarah Johnson',
-      rating: 5,
-      date: '2024-01-10',
-      comment: 'Excellent template! Very clean code and easy to customize. The documentation is also very helpful.'
-    },
-    {
-      id: 2,
-      author: 'Mike Chen',
-      rating: 4,
-      date: '2024-01-08',
-      comment: 'Great design and functionality. Had some questions during setup but the support was quick to help.'
-    }
-  ];
 
   return (
     <Layout>
@@ -99,10 +79,6 @@ const ProductDetail = () => {
                   <span className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
                     {product.category}
                   </span>
-                  <div className="flex items-center space-x-1 text-gray-500">
-                    <Eye className="h-4 w-4" />
-                    <span className="text-sm">{product.viewCount.toLocaleString()} views</span>
-                  </div>
                 </div>
                 <h1 className="text-3xl font-bold text-gray-900 mb-4">{product.title}</h1>
                 
@@ -117,24 +93,6 @@ const ProductDetail = () => {
                     <p className="font-medium text-gray-900">{product.author}</p>
                     <p className="text-sm text-gray-500">Verified Creator</p>
                   </div>
-                </div>
-
-                {/* Rating */}
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="flex items-center space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`h-5 w-5 ${
-                          i < Math.floor(product.rating)
-                            ? 'text-yellow-400 fill-current'
-                            : 'text-gray-300'
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <span className="text-lg font-medium">{product.rating}</span>
-                  <span className="text-gray-500">({product.reviewCount} reviews)</span>
                 </div>
               </div>
 
@@ -194,8 +152,8 @@ const ProductDetail = () => {
           </div>
 
           {/* Description and Features */}
-          <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2 space-y-8">
+          <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-8">
               {/* Description */}
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Description</h3>
@@ -214,51 +172,20 @@ const ProductDetail = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Technologies */}
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Technologies Used</h3>
-                <div className="flex flex-wrap gap-2">
-                  {product.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
 
-            {/* Reviews */}
+            {/* Technologies */}
             <div className="bg-white rounded-lg p-6 shadow-sm h-fit">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Recent Reviews</h3>
-              <div className="space-y-6">
-                {reviews.map((review) => (
-                  <div key={review.id} className="border-b border-gray-200 pb-4 last:border-b-0">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <div className="flex items-center">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className={`h-4 w-4 ${
-                              i < review.rating
-                                ? 'text-yellow-400 fill-current'
-                                : 'text-gray-300'
-                            }`}
-                          />
-                        ))}
-                      </div>
-                      <span className="text-sm text-gray-500">{review.date}</span>
-                    </div>
-                    <p className="font-medium text-gray-900 mb-1">{review.author}</p>
-                    <p className="text-gray-600 text-sm">{review.comment}</p>
-                  </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Technologies Used</h3>
+              <div className="flex flex-wrap gap-2">
+                {product.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                  >
+                    {tech}
+                  </span>
                 ))}
-                <button className="w-full text-blue-600 hover:text-blue-700 font-medium text-sm">
-                  View All Reviews
-                </button>
               </div>
             </div>
           </div>
