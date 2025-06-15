@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# 🛒 Digital Product Marketplace
 
-## Project info
+A full-stack MERN web application that allows users to **buy and sell digital products** such as websites, apps, games, online courses, UI kits, templates, and more. Products are delivered via **secure Google Drive links after successful payment**, creating a peer-to-peer digital economy similar to eBay for digital assets.
 
-**URL**: https://lovable.dev/projects/6b9e7b3c-ddae-4546-854e-73c17f04000f
+---
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+### 🔐 Authentication
+- Secure login and registration (JWT)
+- Role-based system: Buyer / Seller / Admin
 
-**Use Lovable**
+### 🛍️ Marketplace
+- Browse all products with filters (category, price, rating)
+- View product details, image previews, views, and ratings
+- Add to cart and manage cart items
+- Online payment integration (e.g., Stripe)
+- Automatic access to Google Drive link after payment
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6b9e7b3c-ddae-4546-854e-73c17f04000f) and start prompting.
+### 🧑‍💻 Seller Dashboard
+- Upload digital products with metadata
+- Provide Google Drive shareable link (hidden until purchase)
+- Manage personal products and view sales history
 
-Changes made via Lovable will be committed automatically to this repo.
+### 📥 Buyer Experience
+- Browse and buy instantly
+- Download product via Drive link after purchase
+- Rate and review purchases
 
-**Use your preferred IDE**
+### ⚙️ Admin Panel
+- Moderate products
+- Manage users and reported items
+- Track platform activity
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🧰 Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Frontend**: React, Redux, TailwindCSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB with Mongoose
+- **Auth**: JWT-based authentication
+- **Payment**: Stripe (or other)
+- **Storage**: Google Drive links (provided by sellers)
+- **Deployment**: Vercel (Frontend), Render/Heroku (Backend), MongoDB Atlas
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 Getting Started
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+1. **Clone the repo:**
+
+```bash
+git clone https://github.com/azizmarhoum/code-craft-exchange.git
+cd code-craft-exchange
+
+
+
+2. Install dependencies
+```bash
+cd backend
+npm install
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6b9e7b3c-ddae-4546-854e-73c17f04000f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+//backend et frontend
