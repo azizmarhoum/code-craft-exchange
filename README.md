@@ -58,7 +58,6 @@ cd code-craft-exchange
 
 
 2. Install dependencies
-```bash
 cd backend
 npm install
 npm run dev
